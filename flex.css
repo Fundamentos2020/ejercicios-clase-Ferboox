@@ -1,0 +1,28 @@
+/*div{
+    border: 1px solid black;
+    width: 20%;
+}
+
+.img_fluid{
+    width: 100%;
+    height: auto;
+}*/
+
+.flex_container{
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    height: 400px;
+    /*align-items: baseline;*/
+    align-content: stretch;
+}
+
+.flex_container div{
+    background-color: cadetblue;
+    font-size: 2em;
+    padding: 0.5em;
+    margin: 0.25em;
+
+}
