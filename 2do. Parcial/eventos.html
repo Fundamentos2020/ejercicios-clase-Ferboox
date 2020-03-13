@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button onclick="click_button()" onmouseover = "over_button()">Presiona aquí</button>
+
+    <ul id = "lista_ej">
+
+    </ul>
+
+    <script>
+        function click_button()
+        {
+            //cosole.log("Botón Presionado");
+
+            /*//Se crea un elemento
+            var x = document.createElement("li");
+
+            //Se agrega el texto que se va a poner.
+            x.innerText = "Elemento 1";
+
+            //Se localiza el lugar a donde se va a agregar.
+            var lista = document.getElementById("lista_ej");
+
+            //Se agrega la variable x a su elemento padre.
+            lista.appendChild(x);+*/
+
+            var x = "<li>Elemento</li>";
+            var lista = document.getElementById("lista_ej");
+            lista.innerHTML += x;
+
+        }
+        function over_button()
+        {
+            //console.log("Mouse sobre botón");
+        }
+    </script>
+</body>
+</html>
